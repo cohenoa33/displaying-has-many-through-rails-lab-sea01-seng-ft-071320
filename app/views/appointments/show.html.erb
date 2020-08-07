@@ -1,0 +1,5 @@
+<ul>
+<li><%=link_to @appointment.doctor.name, @appointment.doctor %>
+<%=link_to @appointment.patient.name, @appointment.patient %>
+<%=@appointment.appointment_datetime.strftime("%B %d, %Y") %> at <%=@appointment.appointment_datetime.strftime("%k:%M") %> </li>
+</ul>
